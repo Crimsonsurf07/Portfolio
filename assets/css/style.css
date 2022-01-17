@@ -271,6 +271,17 @@ footer {
     background-color: var(--secondary-color);
 }
 
+footer h1 {
+    font-size: var(--section-header);
+    margin: 30px 30px 0 120px;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 4px solid red;
+    color: skyblue;
+    text-shadow:var(--shadow-color);
+    height: 125%;
+}
+
 #contact-me {
     margin-right: 100px;
 }
@@ -291,7 +302,8 @@ footer nav ul {
 }
 
 footer nav ul li a {
-    margin: 30px 150px;
+    display: inline-block;
+    margin: 50px 150px;
     color: var(--primary-color)
 }
 
