@@ -1,0 +1,512 @@
+/*CSS Variables Start*/
+
+:root {
+    --primary-color: rgb(122, 192, 197);
+    --secondary-color: rgb(49, 49, 49);
+    --shadow-color:0 2px 1px #747474, 
+    -1px 3px 1px #767676,
+    -2px 5px 1px #787878, 
+    -3px 7px 1px #7a7a7a;
+    --border-radius: 50px;
+    --section-header: 60px;
+    --white-color: white;
+}
+/* CSS Variables End */
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+/* Head Styles Begin */
+
+header {
+    z-index: 9999;
+    position:-webkit-sticky;
+    position: sticky;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+}
+
+header h1 {
+    background-color: var(--primary-color);
+    font-weight: bold;
+     margin: 3px 20px 30px 0;
+     font-size: var(--section-header);
+     color: var(--secondary-color);
+     padding: 5px 10px 0px 80px;
+     box-shadow: var(--shadow-color);
+    }
+    
+header a, footer a {
+    text-decoration: underline 4px;
+    text-underline-offset: 10px;
+    text-shadow: var(--shadow-color);
+    color:var(--primary-color);
+    display: inline-block;
+}
+
+/* Top Nav Style Start */
+header nav, footer nav {
+    margin: 7px 0;
+}
+    
+header nav ul {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     list-style: none;
+     padding-right: 30px;
+     font-size: 20px;
+}
+    
+header nav ul li a {
+    padding: 10px 15px; 
+}
+
+header a:hover, footer a:hover {
+background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: var(--border-radius);
+}
+
+header a:active, .footer a:active {
+    background-color: purple;
+    color: var(--white-color);
+    border-radius: var(--border-radius);
+}
+
+ /* header a:visited {
+    color: orangered;
+ } */
+
+/* Top Nav Style End */
+    
+    
+/* Head Styles End */
+  
+
+.mini {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: right;
+      margin: 1 30px 15px 0;
+      padding: 5px;
+      font-size: 25px;
+      background-image: url("/assets/images/Coastal-Beach.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      /* background-attachment: fixed; */
+  }
+
+  .subtitle {
+    box-shadow: var(--shadow-color);
+    background-color: var(--primary-color);
+    padding: 5px;
+    margin: 70px 80px 15px 0;
+  }
+
+  /* Head Style End */
+
+  /* About Me Syle Start */
+
+#content {
+    background-color: var(--secondary-color);
+}
+  .container {
+      background-color: var(--primary-color);
+  }
+
+
+  .about, .work h1, .external-links h1  {
+      display: flex;
+      color: whitesmoke;
+      position: relative;
+  }
+
+  .about h1 {
+      font-size: var(--section-header);
+      margin: 30px 30px 0 120px;
+      text-align: right;
+      padding-right: 20px;
+      border-right: 4px solid red;
+      color: skyblue;
+      text-shadow:var(--shadow-color);
+      height: 500px;
+}
+
+.about img {
+    float: left;
+    width: 15%;
+    height: 15%;
+    border-radius: 50px;
+    margin-right: 30px;
+}
+
+.about p {
+    /* display: inline-block; */
+    padding: 30px 20px 0 20px;
+    margin: 30px 50px 30px 0;
+    
+  
+}
+
+/* About-Me Style End */
+
+/* Work Style Start */
+ 
+.work h1 {
+    font-size: var(--section-header);
+    margin: 30px 30px 0 120px;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 4px solid red;
+    color: skyblue;
+    text-shadow:var(--shadow-color);
+    height: 620px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    margin-left: 20px;
+}
+
+
+#big-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    border: 4px solid tan;
+    width: 80%;
+    height: 600px;
+    background-image: url("../images/Sunset-Ocean.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 40px;
+}
+
+#big-box:hover {
+    opacity: 0.5;
+    border-color: pink;
+}
+
+
+.outer-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    border: 4px solid tan;
+    width: 32.5%;
+    height: 230px;
+    margin-top: 20px;
+    margin-left: 320px;
+    position: center;
+    
+      
+}
+
+
+.inset-box {
+    background-color: skyblue;
+    background-size: contain;
+    padding: 2px 20px;
+    margin-bottom: 40px;
+    position: absolute;
+    opacity: 0.7;
+    color: var(--white-color);
+}
+
+.inset-box:hover {
+    background-color: var(--white-color);
+    color: orangered;
+}
+
+#run {
+    background-image: url("../images/Screen-Shot-Run-Buddy.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+#surf-report:hover, #run:hover, #horiseon:hover, #robot:hover {
+    opacity: 0.5;
+    border-color:lightcoral ;
+}
+.surf-report, .run-buddy, .horiseon, .robot {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+#horiseon {
+    background-image: url("../images/Screen-shot-Horiseon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#robot {
+    background-image: url("../images/Screen-Shot-Robot-Gladiators-Game.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Work Style End */
+  
+/* Footer Style Start */
+
+footer {
+    background-color: var(--secondary-color);
+}
+
+#contact-me {
+    margin-right: 100px;
+}
+
+footer h1::after {
+    background-color: tan;
+    height: 125%;
+    width: 2px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    list-style: none;
+    font-size: 20px;
+}
+
+footer nav ul li a {
+    margin: 30px 150px;
+    color: var(--primary-color)
+}
+
+#phone {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+.external-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: right;
+}
+
+/* Footer Style End */
+
+/* Media Queries For Accesibility On Multiple Screen Sizes */
+
+@media screen and (max-width: 980px) {
+  
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-size: 12vm;
+
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+
+    }
+  
+    header h1 {
+        align-content: center;
+
+    }
+  
+    header nav ul {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    header nav ul li a {
+        display: inline-block;
+        padding: 15px;
+    }
+  
+    footer h1, footer nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .work-title {
+        display: inline-block;
+    }
+  
+    .about-me,  .contact-me{
+      width: 100%;
+      text-align: center;
+    }
+    
+
+    .about-me-title, .work-title, .contact-me-title {
+      width: 80%;
+      text-align: center;
+    }
+
+    .outer-box {
+        display: flex;
+        width: 100%;
+        position: center;
+    }
+}
+  
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-size: 10vm;
+
+    }
+    
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+  
+    header h1 {
+        align-content: center;
+        border-right: lightsteelblue;
+    }
+  
+    header nav ul {
+        display: inline;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    header nav ul li a {
+        display: inline-block;
+        padding: 15px;
+        font-size: 20px;
+    }
+  
+    footer h1, footer nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .work-title {
+        text-align: center;
+    }
+  
+    .about-me, .work, .contact-me{
+      width: 100%;
+      text-align: center;
+    }
+    
+
+    .about-me-title, .work-title, .contact-me-title {
+      width: 80%;
+      text-align: center;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+ @media screen and (max-width: 575px) {
+ 
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container {
+        background-color: lightcoral;
+        color: lightseagreen;
+    }
+    
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        
+
+    }
+  
+    header h1 {
+        display: block;
+    }
+  
+    header nav ul {
+        display: inline;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    header nav ul li a {
+        display: inline-block;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    header nav ul li a:hover {
+        background-color: firebrick;
+        color: floralwhite;
+    }
+
+    header nav ul li a::after {
+        background-color: gray;
+        color: indigo;
+    }
+  
+    footer h1, footer nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .work-title {
+        text-align: center;
+    }
+  
+    .about-me, .work, .contact-me{
+      width: 100%;
+      text-align: center;
+    }
+    
+
+    .about-me-title, .work-title, .contact-me-title {
+      width: 80%;
+      text-align: center;
+    }
+}
