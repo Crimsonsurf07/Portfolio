@@ -4,33 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./fontawesome-free-5.13.0-wec/css/ass.css">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/1e8880d70d.js" crossorigin="anonymous"></script>
 </head>
-<!-- Page Content Bedgins -->
+
+<!-- Page Content Begins -->
 <body>
 
     <header>
-        <h1 class="person"> Tony Taylor</h1>
         
         <!-- Nav Start -->
         <nav>
-            <ul>
+            <h1 class="person"> Tony Taylor</h1>
+            <div class="logo">
+            </div>
+            <div class="openMenu">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <ul class="mainMenu">
                 <li>
-                    <a href="#About-Me">About Me </a>
+                    <a href="#About-Me">About Me</a>
                 </li>
                 <li>
-                    <a href="#Work">Work </a>
+                    <a href="#Work">Work</a>
                 </li>
                 <li>
-                    <a href="#Contact-Me">Contact Me </a>
+                    <a href="#Contact-Me">Contact Me</a>
+                </li>
+                <li>
+                    <a href="https://my.indeed.com/p/tonyt-bgilbe1">Resume </a>
+                    </a>
                 </li>
 
-                <li>
-                    <a href="#Resume">Resume </a>
+                <div class="closeMenu">
+                    <i class="fa fa-times"></i>
+                </div>
 
-                </li>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i></i>
+                    <i class="fab fa-github"></i></i>
+                    <i class="fab fa-twitter"></i></i>
+                </span>
             </ul>
         </nav>
         <!-- Nav End -->
@@ -41,7 +58,7 @@
     </div>
      
     <main id="content" class="container">
-        <section id="about-Me" class="about"> 
+        <section id="About-Me" class="about"> 
             <h1 class=" about-me-title"> About Me</h1>
             <article>
                 <p class="about-font">
@@ -92,7 +109,7 @@
     <!-- Main Section End-->
 
      <!-- Footer Section Start -->
-    <footer id="contact-me" class="external-links"> 
+    <footer id="Contact-Me" class="external-links"> 
         <h1 id="contact-title" class="contact-me-title"> Contact Me</h1>
        
     
@@ -115,6 +132,7 @@
 </Footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./assets/js/app.js"></script>
 </body>
 <!-- Page Content Ends -->
 </html>
